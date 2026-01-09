@@ -6,6 +6,7 @@ class User:
         self.driving_license_number = driving_license_number
         self.last_name = last_name
         self.first_name = first_name
+
         self.rating = 0
         self.is_blocked = False
 
