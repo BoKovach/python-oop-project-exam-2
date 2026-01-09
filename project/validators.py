@@ -8,12 +8,12 @@ class Validators:
 
     @staticmethod
     def check_if_value_lt_zero(value, message):
-        if value <= 0:
+        if value < 0:
             raise ValueError(message)
         return True
 
     @staticmethod
     def check_if_value_lt_1(value, message):
-        if value < 1:
+        if value < 1.00:
             raise ValueError(message)
         return True

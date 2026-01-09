@@ -9,4 +9,7 @@ class CargoVan(BaseVehicle):
 
 
     def drive(self, mileage: float):
-        self.battery_level = round(self.battery_level * mileage / self.MAX_MILEAGE * 0.95)
+        used_percentage = round(mileage / self.MAX_MILEAGE * 100) + 5
+        self.battery_level -= used_percentage
+        if self.battery_level < 0:
+            self.battery_level = 0

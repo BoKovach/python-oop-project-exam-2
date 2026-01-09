@@ -43,7 +43,7 @@ class BaseVehicle(ABC):
 
     @property
     def status(self):
-        return 'Ok' if not self.is_damaged else 'Damaged'
+        return 'OK' if not self.is_damaged else 'Damaged'
 
     @abstractmethod
     def drive(self, mileage: float):
